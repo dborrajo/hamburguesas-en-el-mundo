@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas_en_el_mundo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8U-vA-2yg">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gHV-qU-Slq"/>
+                                </constraints>
+                                <state key="normal" title="Quiero una hamburguesa!"/>
+                                <connections>
+                                    <action selector="cambioHamburguesa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="453-Yk-iWS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yT-ZB-WIl">
+                                <rect key="frame" x="16" y="359" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="er0-LQ-ALY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBC-1j-rVD">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="oP9-fY-kob"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbe-xl-ckl">
+                                <rect key="frame" x="16" y="395" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zu3-aG-O52"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="kBC-1j-rVD" secondAttribute="leading" id="ETA-wN-ryC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7yT-ZB-WIl" secondAttribute="trailing" id="FXP-57-Rzp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kBC-1j-rVD" secondAttribute="trailing" id="Lnl-u1-0lT"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Kbe-xl-ckl" secondAttribute="leading" id="T17-pG-1Gy"/>
+                            <constraint firstItem="7yT-ZB-WIl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UvZ-kj-PZA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kbe-xl-ckl" secondAttribute="trailing" id="XiN-Tc-76m"/>
+                            <constraint firstItem="O8U-vA-2yg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xip-n1-tMh"/>
+                            <constraint firstItem="O8U-vA-2yg" firstAttribute="centerX" secondItem="7yT-ZB-WIl" secondAttribute="centerX" id="ac7-7b-JZm"/>
+                            <constraint firstItem="Kbe-xl-ckl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iU4-Nv-UWN"/>
+                            <constraint firstItem="O8U-vA-2yg" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="pYJ-in-pQ3"/>
+                            <constraint firstItem="kBC-1j-rVD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sDM-oL-ckh"/>
+                            <constraint firstItem="kBC-1j-rVD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="t6I-tp-9VB"/>
+                            <constraint firstItem="Kbe-xl-ckl" firstAttribute="top" secondItem="7yT-ZB-WIl" secondAttribute="bottom" constant="15" id="vnW-aL-Hxo"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="7yT-ZB-WIl" secondAttribute="leading" id="yDx-EH-4CX"/>
+                            <constraint firstItem="7yT-ZB-WIl" firstAttribute="top" secondItem="kBC-1j-rVD" secondAttribute="bottom" constant="15" id="zMu-Vx-VDf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hamburguesaLB" destination="7yT-ZB-WIl" id="Ala-ia-l5k"/>
+                        <outlet property="paisLB" destination="kBC-1j-rVD" id="ggZ-lL-4fe"/>
+                        <outlet property="precioLB" destination="Kbe-xl-ckl" id="sFe-3o-un8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
